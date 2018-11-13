@@ -1,7 +1,6 @@
-# Bayesian-machine-learning
-Bayesian version of main stream machine learning models
+# Bayesian version of machine learning models 
 
-1. Beyasian version of Naive Bayesian Classfier.
+1. Beyasian Naive Bayesian Classfier.
    The model setting is as followings:
    Each d-dimensional vector x has a label y with y = 0,1,2,3.....
    For example, y=0 indicating “non-spam email” and y = 1 indicating“spam email”. We model the nth feature vector of a spam      email as
