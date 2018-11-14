@@ -20,8 +20,9 @@ Dirichlet and multinominal distribution are conjugate pair too, so the posterior
 
 In this project, we implement an EM algorithm for the object recommendation problem. Here, we have a data set of the form R = { ![](http://latex.codecogs.com/gif.latex?r_i_j) }
 restricted to a subset of pairs (i,j) ∈ Ω,
-
-
 ![GitHub Logo](https://github.com/yesbo/Bayesian-machine-learning/blob/master/untitled%20folder/model%20setting.png)
-Format: ![Alt Text](url)
+
+## 2. Recommendation system with Matrix factorization and Probit-classfier.
+#### Model setting: <br>
+
 
