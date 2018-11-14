@@ -22,19 +22,6 @@ In this project, we implement an EM algorithm for the object recommendation prob
 restricted to a subset of pairs (i,j) ∈ Ω,
 
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](https://github.com/yesbo/Bayesian-machine-learning/blob/master/untitled%20folder/model%20setting.png)
 Format: ![Alt Text](url)
 
-
-
-
- where i can range from 1,...,N and j can range from 1,...,M and we let rij ∈ {±1}. The goal of matrix factorization is to find a low rank approximation of this data.
-To this end, let the unknown model variables be $u_i$ ∈ $R^d$ and vj ∈ Rd for i = 1,...,N and j = 1,...,M. Let U = {ui} and V = {vj}. The model and priors are,
-ind T iid iid
-rij|U,V ∼ Bernoulli(Φ(ui vj/σ)), for all (i,j) ∈ Ω, ui ∼ N(0,cI), vj ∼ N(0,cI).
-The function Φ(·) is the CDF of a standard normal random variable, as discussed in class. (Hint: You will find the probit regression discussion useful for this homework.)
- The goal of this homework will be to derive and implement an EM algorithm for maximizing 􏰂 p(R,U,V,φ) 􏰂 q(φ)
-lnp(R,U,V) = q(φ)ln q(φ) dφ + q(φ)lnp(φ|R,U,V)dφ, 􏰖 􏰕􏰔 􏰗
-    L(U,V )
-where the auxiliary variable φ is used in the probit setup similar to that discussed in class for
-probit regression: φ = {φij} for (i,j) ∈ Ω and rij = sign(φij), φij ∼ Normal(uTi vj,σ2).1
